@@ -1,3 +1,3 @@
 #! /bin/bash
 
-echo Hello $USER!
+echo Hello hadhaif!
