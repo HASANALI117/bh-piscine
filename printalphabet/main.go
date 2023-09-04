@@ -7,4 +7,5 @@ func main() {
 	for _, z := range alpha {
 		z01.PrintRune(z)
 	}
+	z01.PrintRune('\n')
 }
