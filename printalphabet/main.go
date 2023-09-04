@@ -4,9 +4,8 @@ import "github.com/01-edu/z01"
 
 func main() {
 	alpha := "abcdefghijklmnopqrstuvwxyz"
-
-	for i := len(alpha) - 1; i > 0; i-- {
-		z01.PrintRune(rune(alpha[i]))
+	for _, z := range alpha {
+		z01.PrintRune(z)
 	}
 	z01.PrintRune('\n')
 }
