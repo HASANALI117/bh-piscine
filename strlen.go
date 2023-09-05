@@ -1,5 +1,9 @@
 package piscine
 
 func StrLen(s string) int {
-	return len([]byte(s))
+	var str []rune
+	for i := 0; i < len(s); i++ {
+		str = append(str, rune(s[i]))
+	}
+	return len(str)
 }
