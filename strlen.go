@@ -1,9 +1,7 @@
 package piscine
 
+import "unicode/utf8"
+
 func StrLen(s string) int {
-	var str []rune
-	for i := 0; i < len(s); i++ {
-		str = append(str, rune(s[i]))
-	}
-	return len(str)
+	return utf8.RuneCountInString(s)
 }
