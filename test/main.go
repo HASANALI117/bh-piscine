@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	s := "Hello World!"
-	s = piscine.StrRev(s)
-	fmt.Println(s)
+	arg := 4
+	fmt.Println(piscine.IterativeFactorial(arg))
 }
