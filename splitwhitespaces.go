@@ -13,7 +13,7 @@ func SplitWhiteSpaces(s string) []string {
 
 	}
 	if currentString != "" {
-		result =append(result, currentString)
+		result = append(result, currentString)
 	}
 
 	return result
