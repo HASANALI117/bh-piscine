@@ -10,11 +10,9 @@ func SplitWhiteSpaces(s string) []string {
 		} else {
 			currentString += string(char)
 		}
-
 	}
 	if currentString != "" {
 		result = append(result, currentString)
 	}
-
 	return result
 }
