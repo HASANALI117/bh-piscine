@@ -1,18 +1,21 @@
 package piscine
 
 func SplitWhiteSpaces(s string) []string {
-	var currentString string
+	var currentStr string
 	var result []string
-	for _, char := range s {
-		if char == ' ' || char == 9 || char == 10 {
-			result = append(result, currentString)
-			currentString = ""
+	for i := 0; i < len(s); i++ {
+		if s[i] == ' ' || s[i] == 10 || s[i] == 9 {
+			if currentStr != "" {
+				result = append(result, currentStr)
+				currentStr = ""
+			}
 		} else {
-			currentString += string(char)
+			currentStr += string(s[i])
 		}
 	}
-	if currentString != "" {
-		result = append(result, currentString)
+
+	if currentStr != "" {
+		result = append(result, currentStr)
 	}
 	return result
 }
