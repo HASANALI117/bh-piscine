@@ -14,19 +14,17 @@ func setPoint(ptr *point) {
 	ptr.y = 21
 }
 
-func printChar(s string, i int) {
+func (ptr *point) printChar(s string, i int) {
 	for _, char := range s {
 		z01.PrintRune(char)
 	}
-	ruin1 := rune(i/10 + 48)
-	ruin2 := rune(i%10 + 48)
-	z01.PrintRune(ruin1)
-	z01.PrintRune(ruin2)
+	z01.PrintRune(rune(i/10 + 48))
+	z01.PrintRune(rune(i%10 + 48))
 }
 
 func main() {
 	points := &point{}
 	setPoint(points)
-	printChar("x = ", points.x)
-	printChar(", y = ", points.y)
+	points.printChar("x = ", points.x)
+	points.printChar(", y = ", points.y)
 }
