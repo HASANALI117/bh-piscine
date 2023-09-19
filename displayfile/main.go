@@ -7,15 +7,15 @@ import (
 
 func main() {
 	if len(os.Args) == 1 {
-		fmt.Println("File name missing")
+		fmt.Print("File name missing")
 	} else if len(os.Args) > 2 {
-		fmt.Println("Too many arguments")
+		fmt.Print("Too many arguments")
 	} else {
 		filePath := os.Args[1]
 		fileContent, err := os.ReadFile(filePath)
 		if err != nil {
-			fmt.Println("Error reading file")
+			fmt.Print("Error reading file")
 		}
-		fmt.Println(string(fileContent))
+		fmt.Print(string(fileContent))
 	}
 }
