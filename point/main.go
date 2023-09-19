@@ -14,7 +14,7 @@ func setPoint(ptr *point) {
 	ptr.y = 21
 }
 
-func print(s string) {
+func printChar(s string) {
 	for _, char := range s {
 		z01.PrintRune(char)
 	}
@@ -25,11 +25,11 @@ func main() {
 
 	setPoint(points)
 
-	print("x = ")
+	printChar("x = ")
 	z01.PrintRune(rune(points.x/10 + 48))
 	z01.PrintRune(rune(points.x%10 + 48))
 
-	print(", y = ")
+	printChar(", y = ")
 	z01.PrintRune(rune(points.y/10 + 48))
 	z01.PrintRune(rune(points.y%10 + 48))
 }
