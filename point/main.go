@@ -20,19 +20,19 @@ func printChar(s string) {
 	}
 }
 
-func printInt(i int) {
-	z01.PrintRune(rune(i/10 + 48))
-	z01.PrintRune(rune(i%10 + 48))
+func printPoint(ptr *point) {
+	printChar("x = ")
+	z01.PrintRune(rune(ptr.x/10 + 48))
+	z01.PrintRune(rune(ptr.x%10 + 48))
+	printChar(", y = ")
+	z01.PrintRune(rune(ptr.y/10 + 48))
+	z01.PrintRune(rune(ptr.y%10 + 48))
+	z01.PrintRune(10)
 }
 
 func main() {
 	points := &point{}
 
 	setPoint(points)
-
-	printChar("x = ")
-	printInt(points.x)
-
-	printChar(", y = ")
-	printInt(points.y)
+	printPoint(points)
 }
