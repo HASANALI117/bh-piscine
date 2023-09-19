@@ -18,8 +18,10 @@ func printChar(s string, i int) {
 	for _, char := range s {
 		z01.PrintRune(char)
 	}
-	z01.PrintRune(rune(i/10 + 48))
-	z01.PrintRune(rune(i%10 + 48))
+	ruin1 := rune(i/10 + 48)
+	ruin2 := rune(i%10 + 48)
+	z01.PrintRune(ruin1)
+	z01.PrintRune(ruin2)
 }
 
 func main() {
