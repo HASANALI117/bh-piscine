@@ -27,4 +27,5 @@ func main() {
 	setPoint(points)
 	points.printChar("x = ", points.x)
 	points.printChar(", y = ", points.y)
+	z01.PrintRune(10)
 }
