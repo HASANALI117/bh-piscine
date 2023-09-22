@@ -1,13 +1,8 @@
 package main
 
-import (
-	"fmt"
-	"piscine"
-)
+import "piscine"
 
 func main() {
-	fmt.Println(piscine.IsAlpha("Hello! How are you?"))
-	fmt.Println(piscine.IsAlpha("HelloHowareyou"))
-	fmt.Println(piscine.IsAlpha("What's this 4?"))
-	fmt.Println(piscine.IsAlpha("Whatsthis4"))
+	a := []int{1, 2, 3, 4, 5, 6}
+	piscine.ForEach(piscine.PrintNbr, a)
 }
