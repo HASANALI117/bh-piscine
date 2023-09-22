@@ -12,9 +12,8 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 func IsSorted2(a, b int) int {
 	if a > b {
 		return 1
-	} else if a == b {
-		return 0
-	} else {
+	} else if a < b {
 		return -1
 	}
+	return 0
 }
