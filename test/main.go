@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	a := []int{1, 2, 3, 4, 5, 6}
-	result := piscine.Map(piscine.IsPrime, a)
-	fmt.Println(result)
+	fmt.Println(piscine.IsNumeric("010203"))
+	fmt.Println(piscine.IsNumeric("01,02,03"))
 }
