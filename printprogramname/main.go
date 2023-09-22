@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-	file_path := os.Args[0]
+	file_path := []rune(os.Args[0])
 
-	for _, name := range file_path {
+	for _, name := range file_path[2:] {
 		z01.PrintRune(name)
 	}
 	z01.PrintRune(10)
