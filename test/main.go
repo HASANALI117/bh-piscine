@@ -7,7 +7,7 @@ import (
 
 func main() {
 	a1 := []int{0, 1, 2, 3, 4, 5}
-	a2 := []int{-540104, -356763, -76934, 419122, 476220, 936101, 979428, 983718}
+	a2 := []int{0, 2, 1, 3}
 
 	result1 := piscine.IsSorted(piscine.IsSorted2, a1)
 	result2 := piscine.IsSorted(piscine.IsSorted2, a2)
