@@ -1,7 +1,11 @@
 package main
 
-import "piscine"
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-	piscine.DescendComb()
+	fmt.Println(piscine.IsPrintable("Hello"))
+	fmt.Println(piscine.IsPrintable("Hello\n"))
 }
